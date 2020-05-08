@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-favorite',
@@ -6,7 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./favorite.component.scss']
 })
 export class FavoriteComponent implements OnInit {
-  @Input('is-favorite') isFavorite: boolean;
+  @Input('isFavorite') isFavorite: boolean;
+  // tslint:disable-next-line: no-output-native
+  @Output() change = new EventEmitter();
 
   constructor() { }
 
@@ -14,8 +16,8 @@ export class FavoriteComponent implements OnInit {
   }
 
   changeFavorite() {
-    console.log('favorite')
     this.isFavorite = !this.isFavorite;
+    this.change.emit({ newValue: this.isFavorite });
   }
 
 }
