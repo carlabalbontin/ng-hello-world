@@ -11,6 +11,8 @@ import { AuthorsComponent } from './authors/authors.component';
 import { SummaryPipe } from './summary.pipe';
 import { TitleCasePipe } from './title-case.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { PanelComponent } from './panel/panel.component';
+import { BootstrapListGroupComponent } from './bootstrap-list-group/bootstrap-list-group.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FavoriteComponent } from './favorite/favorite.component';
     AuthorsComponent,
     SummaryPipe,
     TitleCasePipe,
-    FavoriteComponent
+    FavoriteComponent,
+    PanelComponent,
+    BootstrapListGroupComponent
   ],
   imports: [
     BrowserModule,

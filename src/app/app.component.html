@@ -1,4 +1,9 @@
-<!-- <img [src]="">
-<button (click)="onClick()"></button> -->
+<!-- <app-favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></app-favorite> -->
 
-<app-favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></app-favorite>
+<app-bootstrap-list-group>
+  <div class="heading">Heading</div>
+  <div class="body">
+    <p>A first paragraph</p>
+    <p>A second paragraph</p>
+  </div>
+</app-bootstrap-list-group>
