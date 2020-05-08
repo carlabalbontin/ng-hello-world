@@ -11,8 +11,8 @@ import { AuthorsComponent } from './authors/authors.component';
 import { SummaryPipe } from './summary.pipe';
 import { TitleCasePipe } from './title-case.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
-import { PanelComponent } from './panel/panel.component';
 import { BootstrapListGroupComponent } from './bootstrap-list-group/bootstrap-list-group.component';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +23,8 @@ import { BootstrapListGroupComponent } from './bootstrap-list-group/bootstrap-li
     SummaryPipe,
     TitleCasePipe,
     FavoriteComponent,
-    PanelComponent,
-    BootstrapListGroupComponent
+    BootstrapListGroupComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule,

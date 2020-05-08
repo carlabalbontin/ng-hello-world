@@ -1,8 +1,1 @@
-<app-bootstrap-list-group>
-  <!-- If you don't want to render an extra <div> element, you can use ng-container -->
-  <ng-container class="heading">Heading</ng-container>
-  <div class="body">
-    <p>A first paragraph</p>
-    <p>A second paragraph</p>
-  </div>
-</app-bootstrap-list-group>
+<app-like [likesCount]="tweet.likesCount" [isActive]="tweet.isLiked"></app-like>
