@@ -13,6 +13,7 @@ import { TitleCasePipe } from './title-case.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { BootstrapListGroupComponent } from './bootstrap-list-group/bootstrap-list-group.component';
 import { LikeComponent } from './like/like.component';
+import { InputFormatDirective } from './input-format.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LikeComponent } from './like/like.component';
     TitleCasePipe,
     FavoriteComponent,
     BootstrapListGroupComponent,
-    LikeComponent
+    LikeComponent,
+    InputFormatDirective
   ],
   imports: [
     BrowserModule,
