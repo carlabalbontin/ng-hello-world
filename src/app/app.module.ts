@@ -14,6 +14,7 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { BootstrapListGroupComponent } from './bootstrap-list-group/bootstrap-list-group.component';
 import { LikeComponent } from './like/like.component';
 import { InputFormatDirective } from './input-format.directive';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { InputFormatDirective } from './input-format.directive';
     FavoriteComponent,
     BootstrapListGroupComponent,
     LikeComponent,
-    InputFormatDirective
+    InputFormatDirective,
+    ZippyComponent
   ],
   imports: [
     BrowserModule,
