@@ -3,6 +3,10 @@
 Main project for the Udemy course "The Complete Angular Course: Beginner to Advanced".
 Each commit is a new video/assignment/feature learned in the course.
 
+## Section 7: Template-driven forms
+app > contact-form
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
 
 
