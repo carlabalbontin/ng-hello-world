@@ -6,6 +6,8 @@ Each commit is a new video/assignment/feature learned in the course.
 ## Section 7: Template-driven forms
 app > contact-form
 
+<img src="img-readme/6-template-driven-forms.png" width="260" alt="Template Driven Forms">
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
 
