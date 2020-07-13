@@ -17,6 +17,8 @@ import { InputFormatDirective } from './input-format.directive';
 import { ZippyComponent } from './zippy/zippy.component';
 import { ContactFormComponent } from './forms/contact-form/contact-form.component';
 import { SignupFormComponent } from './forms/signup-form/signup-form.component';
+import { NestedFormComponent } from './forms/nested-form/nested-form.component';
+import { NewCourseFormComponent } from './forms/new-course-form/new-course-form.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { SignupFormComponent } from './forms/signup-form/signup-form.component';
     InputFormatDirective,
     ZippyComponent,
     ContactFormComponent,
-    SignupFormComponent
+    SignupFormComponent,
+    NestedFormComponent,
+    NewCourseFormComponent
   ],
   imports: [
     BrowserModule,
