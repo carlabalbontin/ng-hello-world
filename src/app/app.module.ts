@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +23,7 @@ import { AssignmentChangePasswordComponent } from './forms/assignment-change-pas
 import { PostsComponent } from './http/posts/posts.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostService } from './services/post.service';
+import { AppErrorHandler } from './common/errors/app-error-handler';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { PostService } from './services/post.service';
   ],
   providers: [
     CoursesService,
-    PostService
+    PostService,
+    { provide: ErrorHandler, useClass: AppErrorHandler}
   ],
   bootstrap: [AppComponent]
 })
