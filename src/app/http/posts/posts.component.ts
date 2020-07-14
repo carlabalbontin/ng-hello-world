@@ -10,16 +10,14 @@ export class PostsComponent implements OnInit {
   posts: any;
   private url = 'http://jsonplaceholder.typicode.com/posts';
 
-  constructor(private http: HttpClient) {
-    http.get(this.url)
-      .subscribe(response => {
-        // console.log(response);
-        this.posts = response;
-      });
-  }
+  constructor(private http: HttpClient) {}
 
   ngOnInit() {
-
+    this.http.get(this.url)
+    .subscribe(response => {
+      // console.log(response);
+      this.posts = response;
+    });
   }
 
   createPost(input: HTMLInputElement) {
