@@ -20,6 +20,8 @@ import { SignupFormComponent } from './forms/signup-form/signup-form.component';
 import { NestedFormComponent } from './forms/nested-form/nested-form.component';
 import { NewCourseFormComponent } from './forms/new-course-form/new-course-form.component';
 import { AssignmentChangePasswordComponent } from './forms/assignment-change-password/assignment-change-password.component';
+import { PostsComponent } from './http/posts/posts.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,13 +40,15 @@ import { AssignmentChangePasswordComponent } from './forms/assignment-change-pas
     SignupFormComponent,
     NestedFormComponent,
     NewCourseFormComponent,
-    AssignmentChangePasswordComponent
+    AssignmentChangePasswordComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     CoursesService
