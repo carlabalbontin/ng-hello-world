@@ -22,6 +22,7 @@ import { NewCourseFormComponent } from './forms/new-course-form/new-course-form.
 import { AssignmentChangePasswordComponent } from './forms/assignment-change-password/assignment-change-password.component';
 import { PostsComponent } from './http/posts/posts.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PostService } from './services/post.service';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
   ],
   providers: [
-    CoursesService
+    CoursesService,
+    PostService
   ],
   bootstrap: [AppComponent]
 })
