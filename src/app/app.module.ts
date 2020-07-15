@@ -24,6 +24,7 @@ import { PostsComponent } from './http/posts/posts.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostService } from './services/post.service';
 import { AppErrorHandler } from './common/errors/app-error-handler';
+import { FollowersComponent } from './http/followers/followers.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { AppErrorHandler } from './common/errors/app-error-handler';
     NestedFormComponent,
     NewCourseFormComponent,
     AssignmentChangePasswordComponent,
-    PostsComponent
+    PostsComponent,
+    FollowersComponent
   ],
   imports: [
     BrowserModule,

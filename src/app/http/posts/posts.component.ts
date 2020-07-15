@@ -11,7 +11,6 @@ import { BadInputError } from 'src/app/common/errors/bad-input';
 })
 export class PostsComponent implements OnInit {
   posts: any;
-  private url = 'http://jsonplaceholder.typicode.com/posts';
 
   constructor(private service: PostService) {}
 

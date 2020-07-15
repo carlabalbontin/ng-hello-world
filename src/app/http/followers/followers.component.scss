@@ -1,0 +1,10 @@
+ul {
+  padding-left: 0;
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    img.avatar {width: 80px;height: 80px;border-radius: 100%;margin-right:15px;}
+    div > h2 {font-size: 18px; margin-bottom: 0;}
+  }
+}
