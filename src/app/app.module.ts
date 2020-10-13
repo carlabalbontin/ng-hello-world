@@ -31,6 +31,8 @@ import { ProfileComponent } from './http/followers/profile/profile.component';
 import { NotFoundComponent } from './routes/not-found/not-found.component';
 // import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarComponent } from './routes/navbar/navbar.component';
+import { ArchivesComponent } from './archives/archives.component';
+import { ArchiveComponent } from './archives/archive/archive.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { NavbarComponent } from './routes/navbar/navbar.component';
     PostsComponent,
     FollowersComponent,
     ProfileComponent,
-    NavbarComponent
+    NavbarComponent,
+    ArchivesComponent,
+    ArchiveComponent
   ],
   imports: [
     BrowserModule,
@@ -66,6 +70,8 @@ import { NavbarComponent } from './routes/navbar/navbar.component';
       { path: 'followers/:id/:username', component: ProfileComponent },
       { path: 'followers', component: FollowersComponent },
       { path: 'posts', component: PostsComponent },
+      { path: 'archives/:year/:month', component: ArchiveComponent},
+      { path: 'archives', component: ArchivesComponent},
       { path: '**', component: NotFoundComponent }
     ])
   ],
