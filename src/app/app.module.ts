@@ -25,6 +25,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { PostService } from './services/post.service';
 import { AppErrorHandler } from './common/errors/app-error-handler';
 import { FollowersComponent } from './http/followers/followers.component';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './routes/home/home.component';
+import { ProfileComponent } from './http/followers/profile/profile.component';
+import { NotFoundComponent } from './routes/not-found/not-found.component';
+// import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './routes/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -45,14 +51,23 @@ import { FollowersComponent } from './http/followers/followers.component';
     NewCourseFormComponent,
     AssignmentChangePasswordComponent,
     PostsComponent,
-    FollowersComponent
+    FollowersComponent,
+    ProfileComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent },
+      { path: 'followers/:id/:username', component: ProfileComponent },
+      { path: 'followers', component: FollowersComponent },
+      { path: 'posts', component: PostsComponent },
+      { path: '**', component: NotFoundComponent }
+    ])
   ],
   providers: [
     CoursesService,
